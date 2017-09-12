@@ -6,7 +6,7 @@ This is a sample project using the MS Build generation feature of SpecFlow to ma
 - /build/specflow.targets
 - /SpecFlow.ProjectSystem.Tests/SpecFlow.ProjectSystem.Tests.csproj
 
-# Benefits
+## Benefits
 - Csproj file is no longer cluttered with feature files and step definition files, making merging easier.
 - Uses `PackageReference` instead of `packages.config` which in turn uses the global nuget cache directory so that there is no packages directory in your project.
 - Uses MS Build generation so that `.feature.cs` files can be excluded from source control.
