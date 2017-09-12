@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <PropertyGroup>
-    <SpecFlowVersion Condition="'$(SpecFlowVersion)'==''">2.1.0</SpecFlowVersion>
-  </PropertyGroup>
-
   <!--FIXME: This only looks at the first nuget package folder...-->
   <Import Project="$(NuGetPackageFolders.Split(';')[0])\specflow\$(SpecFlowVersion)\tools\TechTalk.SpecFlow.tasks" />
 
