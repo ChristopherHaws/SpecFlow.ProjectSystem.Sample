@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26823.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.ProjectSystem.Tests", "SpecFlow.ProjectSystem.Tests\SpecFlow.ProjectSystem.Tests.csproj", "{417A151A-61B5-4008-9483-B41B161FD938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecFlow.ProjectSystem.Tests", "SpecFlow.ProjectSystem.Tests\SpecFlow.ProjectSystem.Tests.csproj", "{417A151A-61B5-4008-9483-B41B161FD938}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{80EE35C2-13F6-497E-9688-C42C383DDF6B}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6C5B058E-8BC2-47FF-8062-359ABB5815CB}"
+	ProjectSection(SolutionItems) = preProject
+		build\specflow.props = build\specflow.props
+		build\specflow.targets = build\specflow.targets
 	EndProjectSection
 EndProject
 Global
