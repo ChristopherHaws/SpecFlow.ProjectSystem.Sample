@@ -4,6 +4,7 @@
   
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
+    <IsPackable>false</IsPackable>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
     <ShowTrace>true</ShowTrace>
