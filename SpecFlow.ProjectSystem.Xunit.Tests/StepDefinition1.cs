@@ -24,7 +24,7 @@ namespace SpecFlow.ProjectSystem.XunitTests
 		[When("I press add")]
 		public void WhenIPressAdd()
 		{
-			Thread.Sleep(5000);
+			Thread.Sleep(2000);
 			this.result = this.numbers.Sum();
 		}
 

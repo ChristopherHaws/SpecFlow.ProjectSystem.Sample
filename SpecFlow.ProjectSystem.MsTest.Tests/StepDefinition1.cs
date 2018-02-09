@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
+
+[assembly: Parallelize(Scope = ExecutionScope.MethodLevel)]
 
 namespace SpecFlow.ProjectSystem.MsTest.Tests
 {
@@ -21,6 +24,7 @@ namespace SpecFlow.ProjectSystem.MsTest.Tests
 		[When("I press add")]
 		public void WhenIPressAdd()
 		{
+			Thread.Sleep(2000);
 			this.result = this.numbers.Sum();
 		}
 

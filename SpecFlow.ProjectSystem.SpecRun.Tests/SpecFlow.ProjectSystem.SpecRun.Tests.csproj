@@ -24,8 +24,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-    <PackageReference Include="SpecFlow" Version="2.2.1" />
-    <PackageReference Include="SpecRun.SpecFlow" Version="1.6.3" />
+    <PackageReference Include="SpecFlow" Version="2.3.0-preview20180201" />
+    <PackageReference Include="SpecRun.SpecFlow.2-3-0" Version="1.7.0-rc002" />
   </ItemGroup>
 
   <ItemGroup>

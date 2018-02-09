@@ -1,7 +1,7 @@
 ﻿<Project>
 
   <PropertyGroup>
-    <SpecFlowVersion Condition="'$(SpecFlowVersion)'==''">2.2.1</SpecFlowVersion>
+    <SpecFlowVersion Condition="'$(SpecFlowVersion)'==''">2.3.0-preview20180201</SpecFlowVersion>
     <RestorePackagesPath>$(SolutionDir)\packages</RestorePackagesPath>
   </PropertyGroup>
 
