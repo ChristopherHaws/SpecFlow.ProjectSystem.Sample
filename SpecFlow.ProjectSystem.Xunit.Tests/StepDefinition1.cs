@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using TechTalk.SpecFlow;
 using Xunit;
+
+[assembly: CollectionBehavior(CollectionBehavior.CollectionPerClass)]
 
 namespace SpecFlow.ProjectSystem.XunitTests
 {
@@ -21,6 +24,7 @@ namespace SpecFlow.ProjectSystem.XunitTests
 		[When("I press add")]
 		public void WhenIPressAdd()
 		{
+			Thread.Sleep(5000);
 			this.result = this.numbers.Sum();
 		}
 
