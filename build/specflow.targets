@@ -2,7 +2,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <!--FIXME: This only looks at the first nuget package folder...-->
-  <Import Project="$(NuGetPackageFolders.Split(';')[0])\specflow\$(SpecFlowVersion)\tools\TechTalk.SpecFlow.tasks" />
+  <Import Project="$(NuGetPackageRoot)specflow\$(SpecFlowVersion)\tools\TechTalk.SpecFlow.tasks" Condition="Exists('$(NuGetPackageRoot)specflow\$(SpecFlowVersion)\tools\TechTalk.SpecFlow.tasks')" />
 
   <ItemGroup>
     <Compile Remove="**\*.feature.cs" />
@@ -27,6 +27,19 @@
     <BuildServerMode Condition="'$(BuildingInsideVisualStudio)'=='true'">false</BuildServerMode>
     <BuildServerMode Condition="'$(BuildingInsideVisualStudio)'!='true'">true</BuildServerMode>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <BuildDependsOn>
+      BeforeUpdateFeatureFilesInProject;
+      UpdateFeatureFilesInProject;
+      AfterUpdateFeatureFilesInProject;
+      $(BuildDependsOn);
+    </BuildDependsOn>
+    <RebuildDependsOn>
+      SwitchToForceGenerate;
+      $(RebuildDependsOn);
+    </RebuildDependsOn>
+</PropertyGroup>
 
   <Target Name="SwitchToForceGenerate" BeforeTargets="BeforeRebuild">
     <PropertyGroup>
@@ -54,5 +67,8 @@
       </Compile>
     </ItemGroup>
   </Target>
+
+  <Target Name="BeforeUpdateFeatureFilesInProject" />
+  <Target Name="AfterUpdateFeatureFilesInProject" DependsOnTargets="UpdateFeatureFilesInProject" />
 
 </Project>

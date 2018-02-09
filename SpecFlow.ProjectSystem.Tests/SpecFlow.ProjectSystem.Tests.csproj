@@ -1,10 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <Import Project="..\build\specflow.props" />
   
   <PropertyGroup>
     <TargetFramework>net462</TargetFramework>
     <IsPackable>false</IsPackable>
+    <IsSpecFlowProject>true</IsSpecFlowProject>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
     <ShowTrace>true</ShowTrace>
@@ -30,17 +29,11 @@
     <PackageReference Include="SpecFlow" Version="2.1.0" />
     <PackageReference Include="SpecFlow.MsTest" Version="2.1.0" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-
-  <Import Project="..\build\specflow.targets" />
 
 </Project>
