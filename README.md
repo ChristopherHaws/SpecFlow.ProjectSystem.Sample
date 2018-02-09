@@ -17,3 +17,4 @@ This is a sample project using the MS Build generation feature of SpecFlow to ma
 - Does not work with .NET Core.
 - You must maintain the specflow verion you are using. By default, it will use 2.1.0 which is configured in the specflow.props file. If you want to override the version, you use the property `SpecFlowVersion`.
 - Adding `.feature` files works correctly, however adding SpecFlows `Step Definition` template file add the item to the csproj so it is recommended to add a standard class file and generate the steps using the feature file via `Right Click -> Generate Step Definitions`.
+- Renaming a `.feature.cs` file will cause Visual Studio to be in an inconsistent state so it will think the build is failing but it isn't. The current workaround is to restart Visual Studio.
