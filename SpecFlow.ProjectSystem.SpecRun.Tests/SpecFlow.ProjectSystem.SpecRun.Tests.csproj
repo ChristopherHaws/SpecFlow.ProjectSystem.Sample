@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsSpecFlowProject>true</IsSpecFlowProject>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <ShowTrace>true</ShowTrace>
+    <VerboseOutput>true</VerboseOutput>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>1701;1702;1705;1591;0618</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.0-beta2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.0-beta2" />
+    <PackageReference Include="SpecFlow" Version="2.2.1" />
+    <PackageReference Include="SpecFlow.MsTest" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+
+</Project>

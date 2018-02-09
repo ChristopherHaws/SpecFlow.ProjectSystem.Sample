@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26823.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecFlow.ProjectSystem.Tests", "SpecFlow.ProjectSystem.Tests\SpecFlow.ProjectSystem.Tests.csproj", "{417A151A-61B5-4008-9483-B41B161FD938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecFlow.ProjectSystem.MsTest.Tests", "SpecFlow.ProjectSystem.MsTest.Tests\SpecFlow.ProjectSystem.MsTest.Tests.csproj", "{417A151A-61B5-4008-9483-B41B161FD938}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{80EE35C2-13F6-497E-9688-C42C383DDF6B}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6C5B058E
 		build\specflow.targets = build\specflow.targets
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecFlow.ProjectSystem.SpecRun.Tests", "SpecFlow.ProjectSystem.SpecRun.Tests\SpecFlow.ProjectSystem.SpecRun.Tests.csproj", "{5F4185D6-1CCE-4E42-BAF8-3DEBA892FEFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecFlow.ProjectSystem.Xunit.Tests", "SpecFlow.ProjectSystem.Xunit.Tests\SpecFlow.ProjectSystem.Xunit.Tests.csproj", "{DC930D28-6B84-4308-A25B-C67E0EC1C2C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{417A151A-61B5-4008-9483-B41B161FD938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417A151A-61B5-4008-9483-B41B161FD938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{417A151A-61B5-4008-9483-B41B161FD938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4185D6-1CCE-4E42-BAF8-3DEBA892FEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4185D6-1CCE-4E42-BAF8-3DEBA892FEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4185D6-1CCE-4E42-BAF8-3DEBA892FEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4185D6-1CCE-4E42-BAF8-3DEBA892FEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC930D28-6B84-4308-A25B-C67E0EC1C2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC930D28-6B84-4308-A25B-C67E0EC1C2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC930D28-6B84-4308-A25B-C67E0EC1C2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC930D28-6B84-4308-A25B-C67E0EC1C2C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

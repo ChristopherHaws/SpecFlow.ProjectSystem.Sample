@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
+using Xunit;
 
-namespace SpecFlow.ProjectSystem.Tests
+namespace SpecFlow.ProjectSystem.XunitTests
 {
 	[Binding]
 	public sealed class StepDefinition1
@@ -27,7 +27,7 @@ namespace SpecFlow.ProjectSystem.Tests
 		[Then("the result should be (.*) on the screen")]
 		public void ThenTheResultShouldBe(Int32 result)
 		{
-			Assert.AreEqual(result, this.result);
+			Assert.Equal(result, this.result);
 		}
 	}
 }

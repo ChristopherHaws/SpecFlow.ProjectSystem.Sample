@@ -1,7 +1,7 @@
 ﻿<Project>
 
   <PropertyGroup>
-    <SpecFlowVersion Condition="'$(SpecFlowVersion)'==''">2.1.0</SpecFlowVersion>
+    <SpecFlowVersion Condition="'$(SpecFlowVersion)'==''">2.2.1</SpecFlowVersion>
   </PropertyGroup>
 
 </Project>
